@@ -55,13 +55,14 @@ open class NetworkServerManager {
             response.completed()                                           //响应
         }
         
-        routes.add(method: .get, uri: "/home") { (request, response) in
-            
-            let result = DatabaseManager().mysqlGetHomeDataResult()
-            let jsonString = self.baseResponseBodyJSONData(status: 200, message: "成功", data: result)
-            response.setBody(string: jsonString)
-            response.completed()
-        }
+//        routes.add(method: .get, uri: "/home") { (request, response) in
+//            
+//            let result = DatabaseManager().mysqlGetHomeDataResult()
+//            let jsonString = self.baseResponseBodyJSONData(status: 200, message: "成功", data: result)
+//            response.setBody(string: jsonString)
+//            response.setHeader(.contentType, value: "text/html, charset=utf-8")
+//            response.completed()
+//        }
         
     }
     

@@ -64,7 +64,8 @@ let confData = [
 
 do {
 	// Launch the servers based on the configuration data.
-	try HTTPServer.launch(configurationData: confData)
+//    try HTTPServer.launch(configurationData: confData)
+    NetworkServerManager.init(root: "~/webroot", port: 80).startServer()
 } catch {
 	fatalError("\(error)") // fatal error launching one of the servers
 }
