@@ -9,7 +9,7 @@ import PerfectMySQL
 
 
 let mysql_host = "127.0.0.1"
-let mysql_user = "root"
+let mysql_user = "ubuntu"
 let mysql_password = "1234oooO!"
 let mysql_database = "test"
 
