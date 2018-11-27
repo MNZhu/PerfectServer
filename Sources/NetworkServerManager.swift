@@ -25,7 +25,6 @@ open class NetworkServerManager {
         server.serverPort = port                            //端口
         server.documentRoot = root                          //根目录
         server.setResponseFilters([(Filter404(), .high)])   //404过滤
-        
     }
     
     //MARK: 开启服务

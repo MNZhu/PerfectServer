@@ -44,7 +44,7 @@ let confData = [
 		//	* Performs content compression on outgoing data when appropriate.
 		[
 			"name":"localhost",
-			"port":8181,
+			"port":80,
 			"routes":[
 				["method":"get", "uri":"/", "handler":handler],
 				["method":"get", "uri":"/**", "handler":PerfectHTTPServer.HTTPHandler.staticFiles,
@@ -65,7 +65,7 @@ let confData = [
 do {
 	// Launch the servers based on the configuration data.
 //    try HTTPServer.launch(configurationData: confData)
-    NetworkServerManager.init(root: "/home/ubuntu/server/webroot", port: 80).startServer()
+    NetworkServerManager.init(root: "/home/ubuntu/MyServer/PerfectServer/webroot", port: 80).startServer()
 } catch {
 	fatalError("\(error)") // fatal error launching one of the servers
 }
